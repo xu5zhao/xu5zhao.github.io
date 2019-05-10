@@ -31,6 +31,17 @@
 		z-index:9;
 		cursor:pointer 
 	}
+	.content2{
+		width:500px;
+		border-radius:10px;
+		padding:20px;
+		position:absolute;
+		top:15px;
+		left:30%;
+		background-color:#2F4056;
+		z-index:9;
+		cursor:pointer
+	}
 	.tips{
 		cursor:pointer 
 	}
@@ -88,6 +99,9 @@
     </div>
 	<div class="content1" style="color: white;">
         与传统城市建设模式不同，海绵城市的建设关键在于扭转挂念。建设海绵城市特有的“海绵体”，可以有效缓解传统城市逢雨必涝、旱涝急转等问题。城市“海绵体”既包括河、湖、池塘等水系，也包括绿地、花园、可渗透路面这样的城市配套设施。雨水通过这些“海绵体”下渗、滞蓄、净化、回用，最后剩余部分径流通过管网、泵站外排，从而可有效提高城市排水系统的标准，缓减城市内涝的压力。
+    </div>
+	<div class="content2" style="color: white;">
+        友情提示：鼠标划过小云有原理介绍哦
     </div>
 <div style="position:absolute;margin:auto;width:100%;height:100%;overflow:hidden;text-align: center">
 <div style="position:absolute;margin-left:50%;left:-1024px;width:2048px;height:1365px;">
@@ -218,7 +232,7 @@
         
     </div>
 	</div>
-<script>        
+<script>
   var mySwiper = new Swiper ('.swiper-container', {
     direction: 'vertical', // 垂直切换选项
     loop: true, // 循环模式选项
@@ -476,7 +490,7 @@ mychart = echarts.init(document.getElementById("mapDiv5"));
 						for(var n = 0; n<6 ;n++){
 							option.options.push({
 								title: {
-						            text: '2013-2018人民网对'+yy[n]+'暴雨以及积水报道程度统计',
+						            text: '2013-2018人民网对'+yy[n]+'暴雨以及积水报道统计次数',
 							        left: 'center',
 							       
 				    	            textStyle: {
@@ -622,8 +636,7 @@ mychart = echarts.init(document.getElementById("mapDiv5"));
 							            }
 							        },
 							        title: {
-							            text:'985高校科研经费各省平均至每所学校科研成果情况',
-							            //subtext: '数据来源教育部科技司',
+							            text:'',
 							            left: 'center',
 							            top: 15,
 					    	            textStyle: {
@@ -634,7 +647,7 @@ mychart = echarts.init(document.getElementById("mapDiv5"));
 						    legend: {
 						        data: ['北京','西安','郑州','武汉','上海','成都'],
 						        orient:'vertical',
-						        left:'66%',
+						        left:'75%',
 						        top:'30%',
 						        itemGap:12
 						       
@@ -673,138 +686,6 @@ mychart = echarts.init(document.getElementById("mapDiv5"));
 						        axisLine: {show: false}
 						    },
 						    series: [
-									{
-										name:'北京',
-										type:'pictorialBar',
-										barGap: "15%",
-										barCategoryGap: "20%",
-										symbolRepeat: true,
-										symbolSize:[
-											'80%',
-											'60%'
-										],
-										label:{
-											normal:{
-												offset:[10,0],
-											},
-											position: "outside",
-											show: true,
-										},
-										data:[ 
-											{value:13345, symbol:'star6',symbolSize:5},
-											{value:1.364, symbol:'star6',symbolSize:5},
-										]
-									},
-									{
-										name:'西安',
-										type:'pictorialBar',
-										barGap: "15%",
-										barCategoryGap: "20%",
-										symbolRepeat: true,
-										symbolSize:[
-											'80%',
-											'60%'
-										],
-										label:{
-											normal:{
-												offset:[10,0],
-											},
-											position: "outside",
-											show: true,
-										},
-										data:[ 
-											{value:8319, symbol:'droplet',symbolSize:5},
-											{value:0.85, symbol:'droplet',symbolSize:5},
-										]
-									},
-									{
-										name:'郑州',
-										type:'pictorialBar',
-										barGap: "15%",
-										barCategoryGap: "20%",
-										symbolRepeat: true,
-										symbolSize:[
-											'80%',
-											'60%'
-										],
-										label:{
-											normal:{
-												offset:[10,0],
-											},
-											position: "outside",
-											show: true,
-										},
-										data:[ 
-											{value:6402, symbol:'droplet',symbolSize:5},
-											{value:0.65, symbol:'droplet',symbolSize:5},
-										]
-									},
-									{
-										name:'武汉',
-										type:'pictorialBar',
-										barGap: "15%",
-										barCategoryGap: "20%",
-										symbolRepeat: true,
-										symbolSize:[
-											'80%',
-											'60%'
-										],
-										label:{
-											normal:{
-												offset:[10,0],
-											},
-											position: "outside",
-											show: true,
-										},
-										data:[ 
-											{value:23616, symbol:'droplet',symbolSize:5},
-											{value:2.41, symbol:'droplet',symbolSize:5},
-										]
-									},
-									{
-										name:'上海',
-										type:'pictorialBar',
-										barGap: "15%",
-										barCategoryGap: "20%",
-										symbolRepeat: true,
-										symbolSize:[
-											'80%',
-											'60%'
-										],
-										label:{
-											normal:{
-												offset:[10,0],
-											},
-											position: "outside",
-											show: true,
-										},
-										data:[ 
-											{value:1.225, symbol:'droplet',symbolSize:5},
-											{value:0.00125, symbol:'droplet',symbolSize:5},
-										]
-									},
-									{
-										name:'成都',
-										type:'pictorialBar',
-										barGap: "15%",
-										barCategoryGap: "20%",
-										symbolRepeat: true,
-										symbolSize:[
-											'80%',
-											'60%'
-										],
-										label:{
-											normal:{
-												offset:[10,0],
-											},
-											position: "outside",
-											show: true,
-										},
-										data:[ 
-											{value:15204, symbol:'droplet',symbolSize:5},
-											{value:1.55, symbol:'droplet',symbolSize:5},
-										]
-									},
 							]
 								},
 								options: []
@@ -814,7 +695,7 @@ mychart = echarts.init(document.getElementById("mapDiv5"));
 						{
 							"name":2015,
 							'value':[
-							[13345,1.364],
+							[13345,1.3640],
 							[8319,0.85],
 							[6402,0.65],
 							[23616,2.41],
@@ -850,7 +731,7 @@ mychart = echarts.init(document.getElementById("mapDiv5"));
 							option.options.push({
 								 title: {
 							            text:dd[n].name+'年各城市节水量趣味呈现',
-							            //subtext: '数据来源教育部科技司',
+							            subtext: '节水量以人体含水量与人平均用水量为单位换算后的数量',
 							            left: 'center',
 							            top: 15,
 					    	            textStyle: {
@@ -870,15 +751,20 @@ mychart = echarts.init(document.getElementById("mapDiv5"));
 											'60%'
 										],
 										label:{
-											normal:{
-												offset:[10,0],
-											},
+											 normal: {
+													show: true,
+													position: 'right',
+													offset: [10, 0],
+													textStyle: {
+														fontSize: 16
+													}
+												},
 											position: "outside",
 											show: true,
 										},
 										data:[ 
-											{value:dd[n].value[0][1]*10000, symbol:'star6',symbolSize:5},
-											{value:dd[n].value[0][0], symbol:'star6',symbolSize:5},
+											{value:Math.round(dd[n].value[0][1]*1000000)/100, symbol:'triangle',symbolSize:15},
+											{value:dd[n].value[0][0], symbol:'pin',symbolSize:15},
 										]
 									},
 									{
@@ -892,15 +778,20 @@ mychart = echarts.init(document.getElementById("mapDiv5"));
 											'60%'
 										],
 										label:{
-											normal:{
-												offset:[10,0],
-											},
+											 normal: {
+													show: true,
+													position: 'right',
+													offset: [10, 0],
+													textStyle: {
+														fontSize: 16
+													}
+												},
 											position: "outside",
 											show: true,
 										},
 										data:[ 
-											{value:dd[n].value[1][1]*10000, symbol:'emptyHeart',symbolSize:5},
-											{value:dd[n].value[1][0], symbol:'droplet',symbolSize:5},
+											{value:Math.round(dd[n].value[1][1]*1000000)/100, symbol:'triangle',symbolSize:15},
+											{value:dd[n].value[1][0], symbol:'pin',symbolSize:15},
 										]
 									},
 									{
@@ -914,15 +805,20 @@ mychart = echarts.init(document.getElementById("mapDiv5"));
 											'60%'
 										],
 										label:{
-											normal:{
-												offset:[10,0],
-											},
+											 normal: {
+													show: true,
+													position: 'right',
+													offset: [10, 0],
+													textStyle: {
+														fontSize: 16
+													}
+												},
 											position: "outside",
 											show: true,
 										},
 										data:[ 
-											{value:dd[n].value[2][1]*10000, symbol:'emptyHeart',symbolSize:5},
-											{value:dd[n].value[2][0], symbol:'droplet',symbolSize:5},
+											{value:Math.round(dd[n].value[2][1]*1000000)/100, symbol:'triangle',symbolSize:15},
+											{value:dd[n].value[2][0], symbol:'pin',symbolSize:15},
 										]
 									},
 									{
@@ -936,15 +832,20 @@ mychart = echarts.init(document.getElementById("mapDiv5"));
 											'60%'
 										],
 										label:{
-											normal:{
-												offset:[10,0],
-											},
+											 normal: {
+													show: true,
+													position: 'right',
+													offset: [10, 0],
+													textStyle: {
+														fontSize: 16
+													}
+												},
 											position: "outside",
 											show: true,
 										},
 										data:[ 
-											{value:dd[n].value[3][1]*10000, symbol:'emptyHeart',symbolSize:5},
-											{value:dd[n].value[3][0], symbol:'droplet',symbolSize:5},
+											{value:Math.round(dd[n].value[3][1]*1000000)/100, symbol:'triangle',symbolSize:15},
+											{value:dd[n].value[3][0], symbol:'pin',symbolSize:15},
 										]
 									},
 									{
@@ -958,15 +859,20 @@ mychart = echarts.init(document.getElementById("mapDiv5"));
 											'60%'
 										],
 										label:{
-											normal:{
-												offset:[10,0],
-											},
+											 normal: {
+													show: true,
+													position: 'right',
+													offset: [10, 0],
+													textStyle: {
+														fontSize: 16
+													}
+												},
 											position: "outside",
 											show: true,
 										},
 										data:[ 
-											{value:dd[n].value[4][1]*10000, symbol:'emptyHeart',symbolSize:5},
-											{value:dd[n].value[4][0], symbol:'droplet',symbolSize:5},
+											{value:Math.round(dd[n].value[4][1]*1000000)/100, symbol:'triangle',symbolSize:15},
+											{value:dd[n].value[4][0], symbol:'pin',symbolSize:15},
 										]
 									},
 									{
@@ -980,15 +886,20 @@ mychart = echarts.init(document.getElementById("mapDiv5"));
 											'60%'
 										],
 										label:{
-											normal:{
-												offset:[10,0],
-											},
+											 normal: {
+													show: true,
+													position: 'right',
+													offset: [10, 0],
+													textStyle: {
+														fontSize: 16
+													}
+												},
 											position: "outside",
 											show: true,
 										},
 										data:[ 
-											{value:dd[n].value[5][1]*10000, symbol:'emptyHeart',symbolSize:5},
-											{value:dd[n].value[5][0], symbol:'droplet',symbolSize:5},
+											{value:Math.round(dd[n].value[5][1]*1000000)/100, symbol:'triangle',symbolSize:15},
+											{value:dd[n].value[5][0], symbol:'pin',symbolSize:15},
 										]
 									},
 							]
