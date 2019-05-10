@@ -57,7 +57,9 @@
     <script src="dist/js/echart.js"></script>
     <script src="dist/js/china.js"></script>
 	<div class="swiper-container swiper-container-vertical" style="height:100vh">
+	<div style="transform: rotate(-90deg);top:90%;left:50%;margin-left:-22px" class="swiper-button-prev"></div>
 	<div class="swiper-wrapper">
+		
 		<div class="swiper-slide" style="background-color:#00D5D5;height:100vh">
 		<div id="first" style="position:absolute;top:4%;width:100%;height:100%;overflow:hidden">
 			<div class="title_div" style="width:100%;color:#272727;opacity: 1;text-align:center;">
@@ -235,7 +237,7 @@
 <script>
   var mySwiper = new Swiper ('.swiper-container', {
     direction: 'vertical', // 垂直切换选项
-    loop: true, // 循环模式选项
+    loop: false, // 循环模式选项
     
     // 如果需要分页器
     pagination: {
